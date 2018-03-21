@@ -12,6 +12,7 @@ function cb_drained(d)
   file.seek("set", 0)
   -- uncomment the following line for continuous playback
   -- d:play(pcm.RATE_8K)
+  gpio.write(2,gpio.LOW)
 end
 
 function cb_stopped(d)
